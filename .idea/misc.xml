@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/drawable/btn_style.xml" value="0.172" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/drawable/et_style.xml" value="0.171" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/drawable/ic_add_photo.xml" value="0.125" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/drawable/ic_baseline_add_a_photo_24.xml" value="0.125" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/drawable/inp_layout_style.xml" value="0.125" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout-v23/activity_screen_1.xml" value="0.16302083333333334" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen2.xml" value="0.2" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen4.xml" value="0.25" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen_1.xml" value="0.22" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/guest_card.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
