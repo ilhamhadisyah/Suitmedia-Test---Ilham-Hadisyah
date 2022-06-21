@@ -10,9 +10,15 @@
         <entry key="..\:/android/SuitmediaTest/app/src/main/res/drawable/inp_layout_style.xml" value="0.125" />
         <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout-v23/activity_screen_1.xml" value="0.16302083333333334" />
         <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen2.xml" value="0.2" />
-        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen4.xml" value="0.25" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen3.xml" value="0.16" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen4.xml" value="0.14" />
         <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/activity_screen_1.xml" value="0.22" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/event_card.xml" value="0.2" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/event_layout.xml" value="0.25" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/fragment_event_list.xml" value="0.22" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/fragment_event_maps.xml" value="0.22" />
         <entry key="..\:/android/SuitmediaTest/app/src/main/res/layout/guest_card.xml" value="0.22" />
+        <entry key="..\:/android/SuitmediaTest/app/src/main/res/menu/event_menu.xml" value="0.17" />
       </map>
     </option>
   </component>
