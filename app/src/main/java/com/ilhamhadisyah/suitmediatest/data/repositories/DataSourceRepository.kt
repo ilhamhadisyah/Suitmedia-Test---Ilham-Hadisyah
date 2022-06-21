@@ -6,5 +6,5 @@ import com.ilhamhadisyah.suitmediatest.data.model.GuestModel
 
 interface DataSourceRepository {
 
-    fun getGuests(page : Int) : LiveData<Resources<PagedList<GuestModel>>>
+    fun getGuests(page: Int): LiveData<Resources<PagedList<GuestModel>>>
 }

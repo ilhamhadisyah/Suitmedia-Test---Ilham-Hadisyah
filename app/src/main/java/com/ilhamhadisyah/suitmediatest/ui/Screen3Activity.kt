@@ -3,7 +3,6 @@ package com.ilhamhadisyah.suitmediatest.ui
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -36,18 +35,20 @@ class Screen3Activity : AppCompatActivity() {
                 finishAndRemoveTask()
             }
             R.id.switch_map_list -> {
-                val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
-                val currentFragment = navHostFragment!!.childFragmentManager.fragments[0] as Fragment
+                val navHostFragment =
+                    supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
+                val currentFragment =
+                    navHostFragment!!.childFragmentManager.fragments[0] as Fragment
                 val navController = Navigation.findNavController(
                     this,
                     R.id.nav_host_fragment
                 )
 
-                if (currentFragment is EventListFragment){
+                if (currentFragment is EventListFragment) {
                     item.setIcon(R.drawable.ic_list_view)
                     navController.navigate(R.id.action_eventListFragment_to_eventMapsFragment)
 //                    navController.popBackStack(R.id.eventMapsFragment,false)
-                }else if (currentFragment is EventMapsFragment){
+                } else if (currentFragment is EventMapsFragment) {
                     item.setIcon(R.drawable.ic_map_view)
                     navController.navigate(R.id.action_eventMapsFragment_to_eventListFragment)
 //                    navController.popBackStack(R.id.eventListFragment,false)

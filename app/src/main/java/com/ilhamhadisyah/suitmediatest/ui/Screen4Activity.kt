@@ -1,18 +1,12 @@
 package com.ilhamhadisyah.suitmediatest.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ActionMode
 import android.view.MenuItem
-import android.view.View
-import android.widget.GridLayout
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.paging.PagedList
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.ilhamhadisyah.suitmediatest.AppBase
 import com.ilhamhadisyah.suitmediatest.R
 import com.ilhamhadisyah.suitmediatest.data.model.GuestModel
@@ -53,10 +47,10 @@ class Screen4Activity : AppCompatActivity() {
         with(binding) {
             rvGuest.layoutManager =
                 GridLayoutManager(this@Screen4Activity, 2, GridLayoutManager.VERTICAL, false)
-            adapter.initialize(object :RecyclerViewItemSelected{
+            adapter.initialize(object : RecyclerViewItemSelected {
                 override fun onItemSelected(model: GuestModel) {
-                    intent.putExtra("GUEST",model)
-                    setResult(200,intent)
+                    intent.putExtra("GUEST", model)
+                    setResult(200, intent)
                     finish()
                 }
 
@@ -86,8 +80,8 @@ class Screen4Activity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home->{
+        when (item.itemId) {
+            android.R.id.home -> {
                 onBackPressed()
             }
         }

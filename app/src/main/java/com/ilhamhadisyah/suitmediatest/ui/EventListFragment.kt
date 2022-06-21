@@ -24,9 +24,9 @@ class EventListFragment : Fragment() {
     private val binding get() = _binding!!
 
     @Inject
-    lateinit var factory : ViewModelFactory
+    lateinit var factory: ViewModelFactory
 
-    private val viewModel : EventViewModel by viewModels {
+    private val viewModel: EventViewModel by viewModels {
         factory
     }
 
@@ -51,20 +51,20 @@ class EventListFragment : Fragment() {
         val adapter = EventAdapter()
         binding.rvEvents.layoutManager = LinearLayoutManager(context)
         binding.rvEvents.adapter = adapter
-        if (activity != null){
+        if (activity != null) {
             viewModel.getEventData().observe(viewLifecycleOwner) { eventData ->
-                if (eventData!=null){
+                if (eventData != null) {
                     adapter.setData(eventData)
                     adapter.notifyDataSetChanged()
 
                 }
             }
 
-            adapter.initialize(object : EventCardListener{
+            adapter.initialize(object : EventCardListener {
                 override fun onCardSelected(model: EventModel) {
                     val parentActivity = activity
-                    val intent = parentActivity?.intent?.putExtra("EVENT",model)
-                    parentActivity?.setResult(201,intent)
+                    val intent = parentActivity?.intent?.putExtra("EVENT", model)
+                    parentActivity?.setResult(201, intent)
                     parentActivity?.finish()
                 }
 
@@ -87,7 +87,6 @@ class EventListFragment : Fragment() {
         super.onDestroy()
         binding.rvEvents.layoutManager?.removeAllViews()
     }
-
 
 
 }

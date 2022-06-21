@@ -15,11 +15,11 @@ class EventAdapter() :
     RecyclerView.Adapter<EventAdapter.ViewHolder>() {
 
     var eventData = arrayListOf<EventModel>()
-    fun setData(data : List<EventModel>){
+    fun setData(data: List<EventModel>) {
         val oldSize = eventData.size
         eventData.addAll(data)
-        notifyItemRangeRemoved(0,oldSize)
-        notifyItemRangeInserted(0,data.size)
+        notifyItemRangeRemoved(0, oldSize)
+        notifyItemRangeInserted(0, data.size)
     }
 
     fun initialize(cardListener: EventCardListener) {

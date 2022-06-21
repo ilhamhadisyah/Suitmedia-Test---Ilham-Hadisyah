@@ -7,11 +7,11 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class LocalRepository @Inject constructor(private val database : DatabaseObject) {
+class LocalRepository @Inject constructor(private val database: DatabaseObject) {
 
-    fun getGuestAsPaged():DataSource.Factory<Int,GuestModel> =database.getGuestList()
+    fun getGuestAsPaged(): DataSource.Factory<Int, GuestModel> = database.getGuestList()
 
-    fun insertGuests(guests : List<GuestModel>){
+    fun insertGuests(guests: List<GuestModel>) {
         database.insertGuest(guests)
     }
 
